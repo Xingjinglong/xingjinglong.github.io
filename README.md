@@ -1,51 +1,94 @@
-# Jekyll Theme - Mundana by WowThemes.net
+# Jekyll Resume Theme
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
-[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
+Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
-![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
 
-### Documentation
+# Stack
 
-[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
+![](https://img.shields.io/badge/jekyll-✓-blue.svg)
+![](https://img.shields.io/badge/html5-✓-blue.svg)
+![](https://img.shields.io/badge/sass-✓-blue.svg)
+![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
+![](https://img.shields.io/badge/particle--js-✓-blue.svg)
+![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
+![](https://img.shields.io/badge/devicon-✓-blue.svg)
+![](https://img.shields.io/badge/gulp-✓-blue.svg)
 
-### Contribute to Mundana repository
+***
 
-1. In the top-right corner of this page, click **Fork**.
+<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
 
-2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+***
 
-   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
+# Screenshot
 
-3. **Create a branch**: 
+<p align="center">
+  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
+</p>
 
-   `git checkout -b <my-new-feature-or-fix>`
+# Quick Setup
 
-4. **Make necessary changes and commit those changes**:
+1. Install Jekyll: `gem install jekyll bundler`
+2. Fork this repository and clone your fork
+3. Edit `_config.yml` to personalize your site
 
-   `git add .`
+# Settings
 
-   `git commit -m "new feature or fix"`
+You have to fill some informations on `_config.yml` to customize your site:
 
-5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
+## Site settings
+```yml
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
+```
 
-   `git push origin <add-your-branch-name>`
+## User settings
+```yml
+username: Lorem Ipsum
+user_description: Software Engineer at Lorem Ipsum Dolor
+user_title: Mauricio Urraco
+email: mauriurraco@gmail.com
+```
 
-6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
+> Don't forget to change your URL before you deploy your site!
 
-That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
+# Color and Particle Customization
 
+- Color Customization
+  - Edit the `.sass` variables
+- Particle Customization
+  - Edit the json data in particle function in `app.js`
+  - Refer to `Particle.js` for help
 
-### Copyright
+# Content
 
-Copyright (C) 2019 WowThemes.net.
+You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
 
-Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
+```html
+<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
+  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+</a>
+```
 
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+# Running locally
 
-### Live Demo
+In order to compile the assets and run `Jekyll` locally you need to follow those steps:
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
+1. Install Jekyll
+2. Run `jekyll build`
+3. Start and http-server in the folder `_site`
+
+# Contribution
+
+- Report issues
+- Open pull request with improvements
+- Spread the word
+- Reach out to me directly at <mauriurraco@gmail.com>
+
+# Donate
+
+`btc: 36V7HqqENSKn6iFCBuE4iCdtB29uGoCKzN`
+
+`eth: 0xB419E3E9fa2233383E0877d442e55C34B9C944dD`
